@@ -5,3 +5,18 @@ services:
         image: tomcat:9.0.20-jre8-alpine
         ports:
             - '8888:8080'
+        volumes:
+          - schar:/usr/local/tomcat/webapps/
+        depends_on:
+            - app
+
+    app:
+        build:
+            context: ./
+            dockerfile: Dockerfile
+        volumes:
+          - schar:/home/user/hello-world-war
+
+volumes:
+  schar:
+        
