@@ -4,4 +4,4 @@ services:
     prods:
         image: tomcat:9.0.20-jre8-alpine
         ports:
-            - '8080:8080'
+            - '8888:8080'
