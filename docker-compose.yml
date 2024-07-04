@@ -15,7 +15,7 @@ services:
             context: ./
             dockerfile: Dockerfile
         volumes:
-          - schar:/home/user/hello-world-war
+          - schar:/home/user/spring-boot-war-example
 
 volumes:
   schar:
